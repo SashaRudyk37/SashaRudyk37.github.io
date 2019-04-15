@@ -1,0 +1,477 @@
+<!DOCTYPE HTML>
+<html lang="UA">
+
+<head>
+    <title>Архітектура ПК</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <script src="css/jquery-3.3.1.min.js"></script>
+    <script src="css/bootstrap.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header d-lg-flex justify-content-between align-items-center py-2 px-sm-2 px-1">
+                <div id="logo">
+                    <h1><a href="index.html">Архітектура ПК</a></h1>
+                </div>
+                <div class="nav_w3ls ml-lg-5">
+                    <nav>
+                        <label for="drop" class="toggle">Меню</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#about">Введення</a></li>
+                            <li>
+
+                                <label for="drop-2" class="toggle toogle-2">Розділи <span class="fa fa-angle-down"
+                                        aria-hidden="true"></span>
+                                </label>
+                                <a href="#">Розділи <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                <input type="checkbox" id="drop-2" />
+                                <ul>
+                                    <li><a href="#what" class="drop-text">Функціонально-структурна організація</a></li>
+                                    <li><a href="#courses" class="drop-text">Інтерфейс</a></li>
+                                    <li><a href="#oth" class="drop-text">Зовнішні пристрої (ВУ)</a></li>
+                                    <li><a href="#micro" class="drop-text">Мікропроцесор</a></li>
+                                    <li><a href="#voth" class="drop-text">Основні зовнішні пристрої ПК</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="w3ls-bnrbtm py-5" id="about">
+        <div class="container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-md-5 mb-sm-4 mb-2 text-center font-weight-bold">Введення</h3>
+            <div class="row">
+                <div class="col-lg-6 text-center">
+                    <img src="images/12131.jpg" alt="about" class="img-fluid mt-4" />
+                </div>
+                <div class="col-lg-6 pr-xl-5 mt-4">
+                    <h5 class="title-sub mb-3">Комп'ютер (англ. computer - обчислювач) являє собою програмований
+                        електронний пристрій, здатний обробляти дані і робити обчислення, а також виконувати інші
+                        завдання маніпулювання символами. </h5>
+                    <p>
+                        <h5>Існує два основні класи комп'ютерів:</h5>
+                        <dl>
+                            <li>Цифрові комп'ютери, що обробляють дані у вигляді числових двійкових кодів;</li>
+                            <li>Аналогові комп'ютери, обробні безупинно мінливі фізичні величини (електрична напруга,
+                                час і т. д.), які є аналогами обчислюваних величин.</li>
+                        </dl>
+                    </p>
+                    <p class="sub-para pt-4 mt-4 border-top">Оскільки в даний час переважна більшість комп'ютерів є
+                        цифровими, далі будемо розглядати тільки цей клас комп'ютерів і слово "комп'ютер" вживати в
+                        значенні "цифровий комп'ютер". Основу комп'ютерів утворює апаратура (HardWare), побудована, в
+                        основному, з використанням електронних та електромеханічних елементів і пристроїв. Принцип дії
+                        комп'ютерів полягає у виконанні програм (SoftWare) - заздалегідь заданих, чітко визначених
+                        послідовностей арифметичних, логічних і інших операцій.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal fade" id="ModalOne" tabindex="-1" role="dialog" aria-labelledby="ModalOneLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Основні блоки ПК та їх значення</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Основна увага при цьому приділяється структурі і функціональним можливостям машини, які можна
+                        розділити на основні і додаткові. Основні функції визначають призначення ЕОМ: обробка та
+                        зберігання інформації, обмін інформацією з зовнішніми об'єктами. Додаткові функції підвищують
+                        ефективність виконання основних функцій: забезпечують ефективні режими її роботи, діалог з
+                        користувачем, високу надійність і ін Названі функції ЕОМ реалізуються за допомогою її
+                        компонентів: апаратних і програмних засобів.</p>
+                    <p>Структура комп'ютера - це деяка модель, що встановлює склад, порядок і принципи взаємодії в неї
+                        входять. Персональний комп'ютер - це настільна або переносна ЕОМ, що задовольняє вимогам
+                        загальнодоступності і універсальності застосування. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalTwo" tabindex="-1" role="dialog" aria-labelledby="ModalTwoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Структура персонального комп'ютера</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5>Мікропроцесор (МП) - це центральний блок ПК, призначений для управління роботою всіх блоків
+                        машини і для виконання арифметичних і логічних операцій над інформацією.</h5>
+                    <br />
+                    <h4>До складу мікропроцесора входять:</h4>
+                    <dl>
+                        <li>
+                            <p>
+                                Пристрій управління (УУ) - формує і подає в усі блоки машини в потрібні моменти часу
+                                певні сигнали управління (управляючі імпульси), зумовлені специфікою виконуваної
+                                операції і результатами попередніх операцій, формує адреси комірок пам'яті,
+                                використовуваних виконуваної операцією, і передає ці адреси у відповідні блоки ЕОМ;
+                                опорну послідовність імпульсів пристрій керування одержує від генератора тактових
+                                імпульсів;
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Фрифметико-логічний пристрій (АЛП) - призначено для виконання всіх арифметичних і
+                                логічних операцій над числовою і символьної інформацією (у деяких моделях ПК для
+                                прискорення виконання операцій до АЛП підключається додатковий математичний
+                                співпроцесор);
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Мікропроцесорна пам'ять (МПП) - служить для короткочасного характеру, запису та видачі
+                                інформації, безпосередньо використовуваної в обчисленнях у найближчі такти роботи
+                                машини, бо основна пам'ять (ОП) не завжди забезпечує швидкість запису, пошуку й
+                                зчитування інформації, необхідну для ефективної роботи швидкодіючого мікропроцесор.
+                                Регістри - швидкодіючі комірки пам'яті різної довжини (на відміну від осередків ОП, що
+                                мають стандартну довжину 1 байт і більше низька швидкодія);
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Інтерфейсна система мікропроцесора - реалізує сполучення і зв'язок з іншими пристроями
+                                ПК; включає в себе внутрішній інтерфейс МП, буферні запам'ятовуючі регістри і схеми
+                                управління портами вводу-виводу (ПВВ) і системною шиною. Інтерфейс (interface) -
+                                сукупність засобів сполучення і зв'язку пристроїв комп'ютера, що забезпечує їх ефективну
+                                взаємодію. Порт вводу-виводу (I / O - Input / Output port) - апаратура сполучення, що
+                                дозволяє підключити до мікропроцесора інший пристрій ПК.
+                            </p>
+                        </li>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalThree" tabindex="-1" role="dialog" aria-labelledby="ModalThreeLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Генератор тактових імпульсів</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Він генерує послідовність електричних імпульсів, частота генеруючих імпульсів визначає тактову
+                        частоту машини. Проміжок часу між сусідніми імпульсами визначає час одного такту роботи машини
+                        або просто такт роботи машини.</p>
+                    <p>Частота генератора тактових імпульсів є однією з основних характеристик персонального комп'ютера
+                        і багато в чому визначає швидкість його роботи, бо кожна операція в машині виконується за певну
+                        кількість тактів.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services py-5" id="what">
+        <div class="container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-xl-5 mb-sm-4 mb-2 text-center text-wh font-weight-bold">Функціонально-структурна
+                організація</h3>
+            <div class="row text-center">
+                <div class="col-lg-4 serv-w3mk mt-5">
+                    <div class="w3pvtits-services-grids">
+                        <span class="fa fa-leanpub ser-icon" aria-hidden="true"></span>
+                        <h4 class="text-bl my-4">Основні блоки ПК та їх значення</h4>
+                        <p class="text-left">Архітектура комп'ютера звичайно визначається сукупністю її властивостей,
+                            істотних для користувача.</p>
+                        <a class="service-btn mt-xl-5 mt-4 btn" data-toggle="modal" data-target="#ModalOne">Read
+                            More<span class="fa fa-long-arrow-right ml-2"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 serv-w3mk mt-5">
+                    <div class="w3pvtits-services-grids">
+                        <span class="fa fa-leanpub ser-icon" aria-hidden="true"></span>
+                        <h4 class="text-bl my-4">Мікропроцесор</h4>
+                        <p class="text-left">Це центральний блок ПК, призначений для управління роботою всіх блоків
+                            машини - для виконання арифметичних і логічних операцій.</p>
+                        <a class="service-btn mt-xl-5 mt-4 btn" data-toggle="modal" data-target="#ModalTwo">Read
+                            More<span class="fa fa-long-arrow-right ml-2"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 serv-w3mk mt-5">
+                    <div class="w3pvtits-services-grids">
+                        <span class="fa fa-leanpub ser-icon" aria-hidden="true"></span>
+                        <h4 class="text-bl my-4">Генератор тактових імпульсів</h4>
+                        <p class="text-left">Він генерує послідовність електричних імпульсів, їх частота визначає
+                            тактову частоту машини.</p>
+                        <a class="service-btn mt-xl-5 mt-4 btn" data-toggle="modal" data-target="#ModalThree">Read
+                            More<span class="fa fa-long-arrow-right ml-2"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <section class="branches py-5" id="courses">
+        <div class="container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-5 text-center font-weight-bold">Інтерфейс</h3>
+            <div class="row branches-position pt-lg-4">
+                <div class="col-lg-3 col-sm-6 place-w3">
+                    <div class="team-img team-img-1">
+                        <div class="team-content">
+                            <h4 class="text-wh" style="background-color: black !important;">Системна шина</h4>
+                            <p class="team-meta" style="background-color: black !important;">Це основна інтерфейсна
+                                система комп'ютера, що забезпечує сполучення і зв'язок всіх його пристроїв між собою.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 place-w3 mt-sm-0 mt-4">
+                    <div class="team-img team-img-2">
+                        <div class="team-content">
+                            <h4 class="text-wh" style="background-color: black !important;">Основна пам'ять (ОП)</h4>
+                            <p class="team-meta" style="background-color: black !important;">Вона призначена для
+                                зберігання та оперативного обміну інформацією з іншими блоками машини. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 place-w3 mt-lg-0 mt-4">
+                    <div class="team-img team-img-3">
+                        <div class="team-content">
+                            <h4 class="text-wh" style="background-color: black !important;">Зовнішня пам'ять</h4>
+                            <p class="team-meta" style="background-color: black !important;">Вона відноситься до
+                                зовнішніх пристроїв ПК і використовується для довготривалого зберігання будь-якої
+                                інформації, яка може коли-небудь знадобитися для вирішення завдань. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 place-w3 mt-lg-0 mt-4">
+                    <div class="team-img team-img-4">
+                        <div class="team-content">
+                            <h4 class="text-wh" style="background-color: black !important;">Джерело живлення</h4>
+                            <p class="team-meta" style="background-color: black !important;">Це блок, який містить
+                                системи автономного та мережевого енергоживлення ПК.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="clients py-5" id="oth">
+        <div class="mamba  container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-sm-5 mb-4 text-center text-wh font-weight-bold">Зовнішні пристрої (ВУ)</h3>
+            <div class="feedback-info text-center">
+                <p>Це найважливіша складова частина будь-якого обчислювального комплексу. Досить сказати, що за вартістю
+                    ВУ іноді становлять 50 - 80% всього ПК. ВІД складу і характеристик ВУ багато в чому залежать
+                    можливість і ефективність застосування ПК в системах управління і в народному господарстві в цілому.
+                </p>
+                <p>
+                    ВУ ПК забезпечують взаємодію машини з навколишнім середовищем користувачами, об'єктами управління та
+                    іншими ЕОМ. ВУ вельми різноманітні і можуть бути класифіковані по ряду ознак.
+                </p>
+                <p>
+                    Так, за призначенням можна виділити наступні види ВУ:
+                    <p>
+                        -зовнішні запам'ятовуючі пристрої (ВЗУ) або зовнішня пам'ять ПК;
+                    </p>
+                    <p>
+                        -діалогові засоби користувача;
+                    </p>
+                    <p>
+                        -пристрої введення інформації;
+                    </p>
+                    <p>
+                        -пристрої виведення інформації;
+                    </p>
+                    <p>
+                        -засоби зв'язку та телекомунікації.
+                    </p>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="clientsTwo py-5" id="micro">
+        <div class="mamba  container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-sm-5 mb-4 text-center text-wh font-weight-bold">Мікропроцесори</h3>
+            <div class="feedback-info text-center">
+                <p>
+                    Мікропроцесор, інакше, центральний процесор. Центральний процесор (CPU, від англ. Central Processing
+                    Unit) - це основний робочий компонент комп'ютера, який виконує арифметичні і логічні операції,
+                    задані програмою, управляє обчислювальним процесом і координує роботу всіх пристроїв комп'ютера.
+                </p>
+                <p>
+                    Сучасні процесори виконуються у вигляді мікропроцесорів. Фізично мікропроцесор являє собою
+                    інтегральну схему - тонку пластинку кристалічного кремнію прямокутної форми площею всього кілька
+                    квадратних міліметрів, на якій розміщені схеми, що реалізують всі функції процесора.
+                    Кристал-пластинка звичайно міститься в пластмасовий або плоский керамічний корпус і з'єднується
+                    золотими проводками з металевими штирями, щоб його можна було приєднати до системної плати
+                    комп'ютера. В обчислювальній системі може бути декілька паралельно працюючих процесорів; такі
+                    системи називаються багатопроцесорними.
+                </p>
+                <p>
+                    Перший мікропроцесор був випущений в 1971 р. фірмою Intel (США) - МП 4004. В даний час випускається
+                    декілька сотень різних мікропроцесорів, але найбільш популярними і поширеними є мікропроцесори фірми
+                    Intel і AMD.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="clientsThree py-5" id="voth">
+        <div class="mamba  container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-sm-5 mb-4 text-center text-wh font-weight-bold">Основні зовнішні пристрої ПК</h3>
+            <div class="row feedback-info text-center">
+                <div class="col-lg-3 col-sm-6 place-w3 mt-sm-0 mt-4">
+                    <div class="team-img team-img-5">
+                        <div class="team-content">
+                            <h4 class="text-wh" style="background-color: black !important;">Клавіатура</h4>
+                            <p class="team-meta" style="background-color: black !important;">Клавіатура служить для
+                                введення інформації в комп'ютер і подачі керуючих сигналів.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 place-w3 mt-sm-0 mt-4">
+                    <div class="team-img team-img-6">
+                        <div class="team-content">
+                            <h4 class="text-wh" style="background-color: black !important;">Модем</h4>
+                            <p class="team-meta" style="background-color: black !important;">Модем - пристрій для
+                                передачі комп'ютерних даних на великі відстані по телефонних лініях зв'язку.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 place-w3 mt-sm-0 mt-4">
+                    <div class="team-img team-img-7">
+                        <div class="team-content">
+                            <h4 class="text-wh" style="background-color: black !important;">Маніпулятори</h4>
+                            <p class="team-meta" style="background-color: black !important;">Маніпулятори (миша, джойстик тощо) - це спеціальні пристрої, які використовуються для управління курсором.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 place-w3 mt-sm-0 mt-4">
+                    <div class="team-img team-img-8">
+                        <div class="team-content">
+                            <h4 class="text-wh" style="background-color: black !important;">Відеосистема комп'ютера</h4>
+                            <p class="team-meta" style="background-color: black !important;">Відеоадаптер посилає в монітор сигнали керування яскравістю променів і синхросигнали рядкової і кадрової розгорток. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="py-5">
+        <div class="container py-xl-4 py-lg-3">
+            <div class="row footer-grids">
+
+                <div class="col-lg-2 col-6 footer-grid footer-contact mt-lg-0 mt-4">
+                    <ul class="list-unstyled">
+                        <li>
+                            +38(097)0379427
+                        </li>
+                        <li>
+                            <a href="mailto:sasha.rudyk.37@gmail.com">sasha.rudyk.37@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 footer-grid mt-lg-0 mt-4">
+                    <div class="footer-logo">
+                        <h2 class="text-lg-center text-center">
+                            <a class="logo text-wh font-weight-bold" href="index.html">
+                                Архітектура ПК</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright-w3ls py-4">
+        <div class="container">
+            <div class="row">
+                <p class="col-lg-8 copy-right-grids text-wh text-lg-left text-center mt-lg-2">© 2019 Архітектура ПК. All
+                    Rights Reserved | Design by Alex Rudik
+                </p>
+
+                <div class="col-lg-4 w3social-icons text-lg-right text-center mt-lg-0 mt-3">
+                    <ul>
+                        <li>
+                            <a href="https://uk-ua.facebook.com/" class="rounded-circle">
+                                <span class="fa fa-facebook-f"></span>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="https://plus.google.com/" class="rounded-circle">
+                                <span class="fa fa-google-plus"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/?lang=uk" class="rounded-circle">
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li class="pl-2">
+                            <a href="https://dribbble.com/" class="rounded-circle">
+                                <span class="fa fa-dribbble"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#what" class="move-top text-center">
+        <span class="fa fa-angle-double-up" aria-hidden="true"></span>
+    </a>
+
+</body>
+
+</html>
